@@ -1,0 +1,207 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rowdies", sans-serif;
+}
+:root {
+  --first-color: #039fd9;
+  --second-color: #ebf4f617;
+  --third-color: #f5e7b240;
+}
+#home {
+  background-image: url(../images/aerial-shot-mountains-with-dark-blue-sky.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#home nav .navbar-nav .nav-item .nav-link {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  color: #fff;
+  padding: 0.3125rem 1.5625rem;
+  /* transition: all 0.5s ease-in-out; */
+}
+#home nav .navbar-nav .nav-item .nav-link:hover,
+#home nav .navbar-nav .nav-item .nav-link:focus {
+  color: var(--first-color);
+  outline: 0.0625rem solid var(--first-color);
+  border-radius: 1.25rem;
+}
+#home nav .navbar-nav .nav-item .active {
+  color: var(--first-color);
+  outline: 0.0625rem solid var(--first-color);
+  border-radius: 1.25rem;
+}
+.inputSearch {
+  height: 3.125rem;
+}
+.inputSearch input:focus {
+  outline: none;
+  border: none;
+}
+
+button {
+  width: 5rem;
+  height: 2.8125rem;
+
+  top: 5%;
+  right: 0.3125rem;
+}
+button.footer {
+  height: 50px;
+}
+.cards {
+  background-color: var(--second-color);
+  border: 0.125rem solid var(--third-color);
+  backdrop-filter: blur(10px);
+}
+.mainCard {
+  height: 100%;
+  width: 430px;
+  background: linear-gradient(#04364ab6, #d8c4b6df);
+  box-shadow: 5px 15px 30px #1d1d1da9;
+}
+.nameCity span {
+  font-size: 2.5rem;
+  line-height: 1.6875rem;
+}
+.temp span {
+  font-size: 5.625rem;
+  line-height: 8.4375rem;
+  font-weight: 700;
+}
+.weatherData {
+  background: linear-gradient(#fbfff147, #fbfff147);
+  height: 3.75rem;
+}
+.secondCard {
+  background: linear-gradient(#04364ab6, #d8c4b6df);
+  box-shadow: 5px 15px 30px #1d1d1da9;
+  transition: all 0.5s ease-in-out;
+}
+.secondCard:hover {
+  scale: 1.1;
+}
+.content {
+  top: 0.625rem;
+  left: 1.25rem;
+}
+.box {
+  background: linear-gradient(#04364ab6, #d8c4b6df);
+}
+.box input::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+:-ms-input-placeholder {
+  color: #fff;
+}
+/* ************************  FOOTER SECTION ********************* */
+footer {
+  background-color: #262936;
+}
+footer i {
+  width: 50px;
+  height: 50px;
+  line-height: 2;
+  color: #039fd9;
+  background-color: #333;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+footer i:hover 
+{
+  color: #fff;
+  background-color: #039fd9;
+}
+/* ************************  FOOTER SECTION ********************* */
+
+/* ************************ LOADING SPINNER ********************* */
+.spinner {
+  margin: 20% auto 20%;
+  width: 50%;
+  height: 20%;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* ************************ LOADING SPINNER ********************* */
+@media (max-width:576px)
+{
+  .inputSearch {
+    height: 3.125rem;
+    width: 400px;
+    position: relative;
+  }
+  .mainCard
+  {
+    width: 100%;
+    margin: 40px 0;
+
+  }
+  .secondCard
+  {
+    margin-left: 60px;
+    margin: auto;
+  }
+  .cards
+  {
+    width: 80%;
+    margin-top: 20px;
+  }
+  button {
+    position: absolute;
+    width: 5rem;
+    height: 2.8125rem;
+  
+    top: 5%;
+    right: 0;
+  }
+}
